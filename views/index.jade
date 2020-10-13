@@ -1,7 +1,12 @@
 extends layout
-
+head
 block content
   h1= title
-
   p Let's go #{title}!
-  p This website was created by Stephen Burke
+
+  - var developer = "Stephen Burke " + "created this website"
+  p= developer
+  
+  
+
+  
