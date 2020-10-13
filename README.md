@@ -2,6 +2,6 @@
 
 Here is a simple node app
 
-npx express-generator \n
-npm install \n
-npm start \n
+npx express-generator <br/>
+npm install <br/>
+npm start <br/>
