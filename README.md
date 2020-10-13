@@ -2,7 +2,6 @@
 
 Here is a simple node app
 
-Run 
- npm start
-In your terminal to get it going
-
+npx express-generator \n
+npm install \n
+npm start \n
