@@ -1,6 +1,6 @@
 extends layout
 head
-  {"dev": {"name": "Stephen Burke"}}
+  #{ "dev": { "name": "Stephen Burke" }}
 block content
   h1= title
   p Let's go #{title}!
@@ -8,6 +8,8 @@ block content
   - var developer = "Stephen Burke " + "created this website"
   p= developer
   
+  - var out = dev.name() + "created this website"
+  p= out
   
   
 
