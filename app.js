@@ -55,3 +55,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);  // Add catalog routes to middleware chain.
+
+
+var compression = require('compression');
+var helmet = require('helmet');
+
+// Create the Express application object
+var app = express();
+
+app.use(helmet());
