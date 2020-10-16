@@ -39,3 +39,19 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+var catalogRouter = require('./routes/catalog'); //Import routes for "catalog" area of site
+var compression = require('compression');
+
+// Create the Express application object
+var app = express();
+
+
+app.use(compression()); //Compress all routes
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/catalog', catalogRouter);  // Add catalog routes to middleware chain.
